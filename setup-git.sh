@@ -34,7 +34,7 @@ echo "--------------------------------------------------------------------------
 echo "this is project https://github.com/kunoros/"$project
 echo "-----------------------------------------------------------------------------"
 git config --global pull.rebase false
-git config --global user.name "Patrick Laranjo"
+git config --global user.name "Patrick"
 git config --global user.email "patrick.laranjo.s@gmail.com"
 sudo git config --system core.editor nano
 #git config --global credential.helper cache
