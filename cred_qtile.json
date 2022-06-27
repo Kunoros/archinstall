@@ -3,7 +3,7 @@
     "!users": [
         {
             "!password": "123",
-            "sudo": false,
+            "sudo": true,
             "username": "patrick"
         }
     ]

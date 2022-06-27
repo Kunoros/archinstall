@@ -11,9 +11,7 @@
     "gfx_driver": "All open-source (default)",
     "harddrives": [
         "/dev/vda",
-        "/dev/vdb",
-        "/dev/vdc",
-        "/dev/vdd"
+        "/dev/vdb"
     ],
     "hostname": "archlinux",
     "kernels": [
@@ -58,16 +56,13 @@
         "ip": null,
         "type": "nm"
     },
-    "no_pkg_lookups": false,
     "ntp": true,
-    "offline": false,
     "packages": [
-        "nano",
-        "neofetch"
+        "nano"
     ],
     "plugin": null,
     "profile": {
-        "path": "/usr/lib/python3.10/site-packages/archinstall-2.5.0-py3.10.egg/archinstall/profiles/desktop.py"
+        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/desktop.py"
     },
     "script": "guided",
     "silent": false,
