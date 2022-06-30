@@ -23,9 +23,9 @@ echo "################################################################"
 echo "Making all .sh files executable"
 echo "################################################################"
 echo
-# chmod +x *.sh
+chmod +x *.sh
 echo "################################################################"
-echo "Starting alis.sh"
+echo "Starting archinstall with configs"
 echo "################################################################"
 echo
-# ./alis.sh
+archinstall --config ./conf_qtile.json --disk-layou ./disk_qtile.json --creds ./cred_qtile.json
