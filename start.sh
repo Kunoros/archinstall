@@ -28,4 +28,4 @@ echo "################################################################"
 echo "Starting archinstall with configs"
 echo "################################################################"
 echo
-archinstall --config ./conf_qtile.json --disk-layou ./disk_qtile.json --creds ./cred_qtile.json
+archinstall --config ./conf_qtile.json --disk-layouts ./disk_qtile.json --creds ./cred_qtile.json
