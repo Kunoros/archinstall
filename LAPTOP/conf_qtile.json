@@ -10,10 +10,9 @@
     "desktop-environment": "qtile",
     "gfx_driver": "All open-source (default)",
     "harddrives": [
-        "/dev/vda",
-        "/dev/vdb"
+        "/dev/vda"
     ],
-    "hostname": "archlinux",
+    "hostname": "arch-laptop",
     "kernels": [
         "linux",
         "linux-lts"

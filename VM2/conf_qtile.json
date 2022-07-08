@@ -58,7 +58,7 @@
     },
     "ntp": true,
     "packages": [
-        "nano"
+        "git", "nano"
     ],
     "plugin": null,
     "profile": {

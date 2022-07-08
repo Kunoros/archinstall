@@ -1,0 +1,10 @@
+{
+    "!encryption-password": null,
+    "!users": [
+        {
+            "!password": "123",
+            "sudo": true,
+            "username": "patrick"
+        }
+    ]
+}
