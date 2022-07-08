@@ -32,14 +32,29 @@ while [ $x = 0 ]; do
     case "$input" in
     1)
         cd $installed_dir/DESKTOP
+        echo "################################################################"
+        echo "Starting archinstall with configs OF 1"
+        echo "################################################################"
+        echo
+        archinstall --config ./conf_qtile.json --disk-layout ./disk_qtile.json --creds ./cred_qtile.json
         x=1
         ;;
     2)
         cd $installed_dir/LAPTOP
+        echo "################################################################"
+        echo "Starting archinstall with configs OF 2"
+        echo "################################################################"
+        echo
+        archinstall --config ./conf_qtile.json --disk-layout ./disk_qtile.json --creds ./cred_qtile.json
         x=1
         ;;
     3)
         cd $installed_dir/MV2
+        echo "################################################################"
+        echo "Starting archinstall with configs OF 3"
+        echo "################################################################"
+        echo
+        archinstall --config ./conf_qtile.json --disk-layout ./disk_qtile.json --creds ./cred_qtile.json
         x=1
         ;;
     *)
@@ -49,9 +64,3 @@ while [ $x = 0 ]; do
 
     esac
 done
-
-echo "################################################################"
-echo "Starting archinstall with configs OF 3"
-echo "################################################################"
-echo
-archinstall --config ./conf_qtile.json --disk-layout ./disk_qtile.json --creds ./cred_qtile.json
