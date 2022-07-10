@@ -24,17 +24,6 @@
                 "start": "513MiB",
                 "type": "primary",
                 "wipe": true
-            },
-            {
-                "filesystem": {
-                    "format": "ext4",
-                    "mount_options": []
-                },
-                "mountpoint": "/home",
-                "size": "50%",
-                "start": "1MiB",
-                "type": "primary",
-                "wipe": true
             }
         ],
         "wipe": true
