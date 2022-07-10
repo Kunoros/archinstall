@@ -18,8 +18,6 @@ else
     echo "################################################################"
 fi
 
-chmod +x *.sh
-
 echo "################################################################"
 echo "Chose one of the following options."
 echo "1) LAPTOP     | one drive"
@@ -33,21 +31,19 @@ while [ $x = 0 ]; do
     read input
     case "$input" in
     1)
-        cd $installed_dir/DESKTOP
-        echo "################################################################"
-        echo "Starting archinstall with configs OF DESKTOP"
-        echo "################################################################"
-        echo
-        sh DESKTOP/archinstall.sh
-        x=1
-        ;;
-    2)
-        cd $installed_dir/LAPTOP
         echo "################################################################"
         echo "Starting archinstall with configs OF LAPTOP"
         echo "################################################################"
         echo
-        sh LAPTOP/archinstall.sh
+        archinstall --config LAPTOP/conf_qtile.json --disk-layout LAPTOP/disk_qtile.json --creds LAPTOP/cred_qtile.json
+        x=1
+        ;;
+    2)
+        echo "################################################################"
+        echo "Starting archinstall with configs OF DESKTOP"
+        echo "################################################################"
+        echo
+        archinstall --config DESKTOP/conf_qtile.json --disk-layout DESKTOP/disk_qtile.json --creds DESKTOP/cred_qtile.json
         x=1
         ;;
     3)
@@ -55,7 +51,7 @@ while [ $x = 0 ]; do
         echo "Starting archinstall with configs OF VM2"
         echo "################################################################"
         echo
-        sh VM2/archinstall.sh
+        archinstall --config VM2/conf_qtile.json --disk-layout VM2/disk_qtile.json --creds VM2/cred_qtile.json
         x=1
         ;;
     *)
