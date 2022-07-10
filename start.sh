@@ -36,7 +36,7 @@ while [ $x = 0 ]; do
         echo "Starting archinstall with configs OF 1"
         echo "################################################################"
         echo
-        archinstall --config ./conf_qtile.json --disk-layout ./disk_qtile.json --creds ./cred_qtile.json
+        ./archinstall.sh
         x=1
         ;;
     2)
@@ -45,7 +45,7 @@ while [ $x = 0 ]; do
         echo "Starting archinstall with configs OF 2"
         echo "################################################################"
         echo
-        archinstall --config ./conf_qtile.json --disk-layout ./disk_qtile.json --creds ./cred_qtile.json
+        ./archinstall.sh
         x=1
         ;;
     3)
@@ -54,7 +54,7 @@ while [ $x = 0 ]; do
         echo "Starting archinstall with configs OF 3"
         echo "################################################################"
         echo
-        archinstall --config ./conf_qtile.json --disk-layout ./disk_qtile.json --creds ./cred_qtile.json
+        ./archinstall.sh
         x=1
         ;;
     *)
