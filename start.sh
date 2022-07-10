@@ -18,6 +18,8 @@ else
     echo "################################################################"
 fi
 
+chmod +x *.sh
+
 echo "################################################################"
 echo "Chose one of the following options."
 echo "1) LAPTOP     | one drive"
@@ -33,28 +35,27 @@ while [ $x = 0 ]; do
     1)
         cd $installed_dir/DESKTOP
         echo "################################################################"
-        echo "Starting archinstall with configs OF 1"
+        echo "Starting archinstall with configs OF DESKTOP"
         echo "################################################################"
         echo
-        ./archinstall.sh
+        sh DESKTOP/archinstall.sh
         x=1
         ;;
     2)
         cd $installed_dir/LAPTOP
         echo "################################################################"
-        echo "Starting archinstall with configs OF 2"
+        echo "Starting archinstall with configs OF LAPTOP"
         echo "################################################################"
         echo
-        ./archinstall.sh
+        sh LAPTOP/archinstall.sh
         x=1
         ;;
     3)
-        cd $installed_dir/MV2
         echo "################################################################"
-        echo "Starting archinstall with configs OF 3"
+        echo "Starting archinstall with configs OF VM2"
         echo "################################################################"
         echo
-        ./archinstall.sh
+        sh VM2/archinstall.sh
         x=1
         ;;
     *)
