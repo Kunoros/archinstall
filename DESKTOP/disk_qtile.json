@@ -1,5 +1,5 @@
 {
-    "/dev/vda": {
+    "/dev/nvme0n1": {
         "partitions": [
             {
                 "boot": true,
@@ -28,7 +28,23 @@
         ],
         "wipe": true
     },
-    "/dev/vdb": {
+    "/dev/sda": {
+        "partitions": [
+            {
+                "filesystem": {
+                    "format": "ext4",
+                    "mount_options": []
+                },
+                "mountpoint": "/snapshot",
+                "size": "100%",
+                "start": "1MiB",
+                "type": "primary",
+                "wipe": true
+            }
+        ],
+        "wipe": true
+    },
+    "/dev/sdb": {
         "partitions": [
             {
                 "filesystem": {
@@ -36,6 +52,22 @@
                     "mount_options": []
                 },
                 "mountpoint": "/home",
+                "size": "100%",
+                "start": "1MiB",
+                "type": "primary",
+                "wipe": true
+            }
+        ],
+        "wipe": true
+    },
+    "/dev/sdc": {
+        "partitions": [
+            {
+                "filesystem": {
+                    "format": "ext4",
+                    "mount_options": []
+                },
+                "mountpoint": "/extra",
                 "size": "100%",
                 "start": "1MiB",
                 "type": "primary",
