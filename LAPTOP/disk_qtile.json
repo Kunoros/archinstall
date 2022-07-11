@@ -3,11 +3,11 @@
         "partitions": [
             {
                 "boot": true,
-                "encrypted": true,
+                "encrypted": false,
                 "filesystem": {
                     "format": "fat32"
                 },
-                "mountpoint": "/boot",
+                "mountpoint": "/boot/efi",
                 "size": "512MiB",
                 "start": "1MiB",
                 "type": "primary",
@@ -20,7 +20,7 @@
                     "mount_options": []
                 },
                 "mountpoint": "/",
-                "size": "50%",
+                "size": "100%",
                 "start": "513MiB",
                 "type": "primary",
                 "wipe": true
