@@ -7,7 +7,7 @@
                 "filesystem": {
                     "format": "fat32"
                 },
-                "mountpoint": "/boot/efi",
+                "mountpoint": "/boot",
                 "size": "512MiB",
                 "start": "1MiB",
                 "type": "primary",
