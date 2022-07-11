@@ -3,7 +3,7 @@
         "partitions": [
             {
                 "boot": true,
-                "encrypted": false,
+                "encrypted": true,
                 "filesystem": {
                     "format": "fat32"
                 },
@@ -14,7 +14,7 @@
                 "wipe": true
             },
             {
-                "encrypted": false,
+                "encrypted": true,
                 "filesystem": {
                     "format": "ext4",
                     "mount_options": []
@@ -31,6 +31,7 @@
     "/dev/sda": {
         "partitions": [
             {
+                "encrypted": true,
                 "filesystem": {
                     "format": "ext4",
                     "mount_options": []
