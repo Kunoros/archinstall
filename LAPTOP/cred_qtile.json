@@ -1,5 +1,5 @@
 {
-    "!encryption-password": "123",
+    "!encryption-password": null,
     "!users": [
         {
             "!password": "123",

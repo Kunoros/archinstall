@@ -14,7 +14,7 @@
                 "wipe": true
             },
             {
-                "encrypted": true,
+                "encrypted": false,
                 "filesystem": {
                     "format": "ext4",
                     "mount_options": []
@@ -31,7 +31,7 @@
     "/dev/sda": {
         "partitions": [
             {
-                "encrypted": true,
+                "encrypted": false,
                 "filesystem": {
                     "format": "ext4",
                     "mount_options": []
