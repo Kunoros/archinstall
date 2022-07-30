@@ -35,7 +35,7 @@
                     "format": "ext4",
                     "mount_options": []
                 },
-                "mountpoint": "/snapshot",
+                "mountpoint": "/extra",
                 "size": "100%",
                 "start": "1MiB",
                 "type": "primary",
@@ -52,22 +52,6 @@
                     "mount_options": []
                 },
                 "mountpoint": "/home",
-                "size": "100%",
-                "start": "1MiB",
-                "type": "primary",
-                "wipe": true
-            }
-        ],
-        "wipe": true
-    },
-    "/dev/sdc": {
-        "partitions": [
-            {
-                "filesystem": {
-                    "format": "ext4",
-                    "mount_options": []
-                },
-                "mountpoint": "/extra",
                 "size": "100%",
                 "start": "1MiB",
                 "type": "primary",
